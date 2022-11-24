@@ -15,13 +15,11 @@ int main() {
     int bValue = 0;
 
     // process and output
-    for (int loopCounter = 0; loopCounter < 255; loopCounter++) {
-        rValue = rValue + 1;
-        for (int loopCounter = 0; gValue <= 255; loopCounter++) {
-            gValue++;
-            for (int loopCounter = 0; bValue <= 255; loopCounter++) {
-                bValue++;
-                std::cout << "R " << rValue << "G " << "B" << bValue << "\n";
+    for (int loopCounter1 = 0; loopCounter1 <= 256; loopCounter1++) {
+        for (int loopCounter2 = 0; loopCounter2 <= 256; loopCounter2++) {
+            for (int loopCounter3 = 0; loopCounter3 <= 256; loopCounter3++) {
+                std::cout << "R " << loopCounter1 << "G " << loopCounter2 << " B" 
+                << loopCounter3 << std::endl;
             }
         }
     }
