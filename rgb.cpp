@@ -15,9 +15,9 @@ int main() {
     int bValue = 0;
 
     // process and output
-    for (int loopCounter1 = 0; loopCounter1 <= 256; loopCounter1++) {
-        for (int loopCounter2 = 0; loopCounter2 <= 256; loopCounter2++) {
-            for (int loopCounter3 = 0; loopCounter3 <= 256; loopCounter3++) {
+    for (int loopCounter1 = 0; loopCounter1 < 255; loopCounter1++) {
+        for (int loopCounter2 = 0; loopCounter2 < 255; loopCounter2++) {
+            for (int loopCounter3 = 0; loopCounter3 < 255; loopCounter3++) {
                 std::cout << "R " << loopCounter1 << "G " << loopCounter2 << " B" 
                 << loopCounter3 << std::endl;
             }
